@@ -1,11 +1,11 @@
-import "./env.declaration";
-// https://docs.seyfert.dev/getting-started/declare-module
-import { Client, ParseClient } from "seyfert";
+import { Client } from "seyfert";
+import type {ParseClient} from "seyfert";
 
 const client = new Client();
 
+// This will start the connection with the gateway and load commands, events, components and langs
 client.start();
 
-declare module "seyfert" {
-    interface UsingClient extends ParseClient<Client<true>> {}
+declare module 'seyfert' {
+  interface UsingClient extends ParseClient<Client<true>> { }
 }
