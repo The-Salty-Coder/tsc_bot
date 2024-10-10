@@ -9,6 +9,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "discord-api-types": "^0.37.101",
     "seyfert": "^2.1.0"
   }
 }
